@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * PAJ EmailOverride for Magento 
+ *
+ * @package     PAJ_EmailOverride
+ */
+-->
+<config>
+
+    <modules>
+        <PAJ_EmailOverride>
+            <version>0.2.6</version>
+        </PAJ_EmailOverride>
+    </modules>
+
+    <global>
+        <helpers>
+            <emailoverride>
+                <class>PAJ_EmailOverride_Helper</class>
+            </emailoverride>
+        </helpers>
+
+        <models>
+            <emailoverride>
+                <class>PAJ_EmailOverride_Model</class>
+            </emailoverride>
+            <core>
+                <rewrite>
+                    <translate>PAJ_EmailOverride_Model_Translate</translate>
+                </rewrite>
+                <rewrite>
+                    <email_template>PAJ_EmailOverride_Model_Email_Template</email_template>
+                </rewrite>
+            </core>
+        </models>
+	</global>
+</config>

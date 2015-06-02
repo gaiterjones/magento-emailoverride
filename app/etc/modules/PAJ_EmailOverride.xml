@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * PAJ EmailOverride-module for Magento 
+ * Override email templates to allow customisation
+ * THIS IS A FORK OF -> https://www.yireo.com/software/magento-extensions/email-override/downloads
+ * templates should be installed in 
+ * app/design/frontend/YOUR_PACKAGE/YOUR_THEME/locale/xx_XX
+ * @package     PAJ_EmailOverride
+
+ */
+-->
+<config>
+    <modules>
+        <PAJ_EmailOverride>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Core />
+            </depends>
+        </PAJ_EmailOverride>
+    </modules>
+</config>
